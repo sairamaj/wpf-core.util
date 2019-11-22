@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>Wpf.Core.Util</id>
+    <version>1.0.0</version>
+    <title>Wpf Core Utilities</title>
+    <authors>sairama jamalapuram</authors>
+    <owners>sairama jamalapuram</owners>
+    <projectUrl>https://github.com/sairamaj/wpf-core.util</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Wpf Core utilities</description>
+    <releaseNotes>Initial release.</releaseNotes>
+    <copyright>Copyright 2019</copyright>
+    <tags>Wpf core</tags>
+  </metadata>
+</package>
