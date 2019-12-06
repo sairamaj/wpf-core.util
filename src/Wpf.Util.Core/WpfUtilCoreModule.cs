@@ -8,7 +8,7 @@ namespace Wpf.Util.Core
     {
         protected override void Load(ContainerBuilder builder)
         {
-            var logger = new LogViewModel();
+            var logger = new LogViewModel(1000, 100);
             builder.RegisterInstance(logger).As<ILogger>().SingleInstance();
         }
     }

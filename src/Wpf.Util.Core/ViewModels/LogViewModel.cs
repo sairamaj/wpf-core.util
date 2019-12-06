@@ -13,12 +13,17 @@ namespace Wpf.Util.Core.ViewModels
         /// <summary>
         /// Log messages collection.
         /// </summary>
-        private readonly SafeObservableCollection<LogMessage> _logMessages = new SafeObservableCollection<LogMessage>();
+        private readonly LimitedSafeObservableCollection<LogMessage> _logMessages;
 
         /// <summary>
         /// Gets log message collections.
         /// </summary>
         public ObservableCollection<LogMessage> LogMessages => this._logMessages;
+
+        public LogViewModel(int maximumOccupancy, int trimByValue)
+        {
+            this._logMessages = new LimitedSafeObservableCollection<LogMessage>(maximumOccupancy, trimByValue);
+        }
 
         /// <summary>
         /// Adds a log message to the collection.

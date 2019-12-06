@@ -61,6 +61,8 @@
     <Compile Include="Extensions\HttpResponseMessageExtension.cs" />
     <Compile Include="Extensions\LinqExtensions.cs" />
     <Compile Include="Extensions\ObjectExtensions.cs" />
+    <Compile Include="LimitedList.cs" />
+    <Compile Include="LimitedSafeObservableCollection.cs" />
     <Compile Include="Model\InfoType.cs" />
     <Compile Include="Model\LogLevel.cs" />
     <Compile Include="Model\LogMessage.cs" />
@@ -74,6 +76,7 @@
     <Compile Include="ViewModels\FaultExceptionViewModel.cs" />
     <Compile Include="ViewModels\HttpMessagesViewModel.cs" />
     <Compile Include="ViewModels\HttpRequestResponseMessageViewModel.cs" />
+    <Compile Include="ViewModels\LogMessageContainerViewModel.cs" />
     <Compile Include="ViewModels\LogViewModel.cs" />
     <Compile Include="ViewModels\NameValueTreeViewModel.cs" />
     <Compile Include="ViewModels\NameValueViewModel.cs" />
