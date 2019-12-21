@@ -2,7 +2,7 @@
 using Wpf.Util.Core.Diagnostics;
 using Wpf.Util.Core.ViewModels;
 
-namespace Wpf.Util.Core
+namespace Wpf.Util.Core.Registration
 {
     public class WpfUtilCoreModule :Module
     {
@@ -10,6 +10,7 @@ namespace Wpf.Util.Core
         {
             var logger = new LogViewModel(1000, 100);
             builder.RegisterInstance(logger).As<ILogger>().SingleInstance();
+            builder.RegisterType<CommandTreeItemViewMapper>().As<ICommandTreeItemViewMapper>().SingleInstance();
         }
     }
 }
